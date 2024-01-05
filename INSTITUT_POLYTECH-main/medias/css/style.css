@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+}
+
+nav {
+    background-color: #dbdbdb;
+    padding: 30px;
+    text-align: right;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin-left: 22px;
+}
+
+.menu li .on {
+    color: #f60;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #039;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+.menu li a:hover {
+    color: #09f;
+    transition: 0.2s;
+}
+
+
+/*----------------------------------parti 2--------------------------*/
+
+section {
+    margin-bottom: 30px;
+}
+
+section img {
+    width: 100%;
+}
+
+.resume,
+article {
+    background-color: #fff;
+    margin: auto;
+    width: 85%;
+    margin-bottom: 30px;
+    height: 250px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-shadow: 3px 3px 9px #ddd;
+}
+
+article {
+    height: auto;
+}
+
+article img {
+    float: right;
+    margin-left: 18px;
+    margin-bottom: 10px;
+}
+
+.resume h1 {
+    text-align: center;
+    color: #933;
+}
+
+.resume p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.resume p:last-child {
+    display: inline;
+    background-color: #f90;
+    padding: 5px 25px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    transition: 0.8s;
+}
+
+a:hover {
+    color: #fff;
+    transition: 0.8s;
+}
+
+.rond {
+    background-image: url(../images/institut.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+}
+
+.rond2 {
+    background-size: cover;
+    background-image: url(../images/institut2.jpg);
+    background-position: center;
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 50px;
+    color: #933;
+    letter-spacing: 5px;
+}
+
+h3 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+
+/*------------------------media sur phone--------------*/
+
+.voir,
+.cacher,
+#check {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .voir,
+    .cacher {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .voir:hover,
+    .cacher:hover {
+        color: #666;
+        transition: 0.5s;
+    }
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        background-color: #dbdbdb;
+        width: 100%;
+        padding-top: 80px;
+        transition: 0.8s;
+    }
+    #check:checked~.menu {
+        right: 0;
+    }
+    .cacher {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    .menu li {
+        display: block;
+        text-align: center;
+        margin-bottom: 35px;
+        border-bottom: 1px solid #ccc;
+    }
+    .rond {
+        width: 50%;
+        float: none;
+        margin-right: 0;
+        border-radius: 50px;
+    }
+    .rond2 {
+        width: 50%;
+        float: none;
+        margin-right: 0;
+        border-radius: 50px;
+    }
+    .resume,
+    article {
+        height: auto;
+        text-align: center;
+    }
+    article img {
+        float: none;
+        margin-left: 0;
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 450px;
+    }
+}
+
+footer {
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/button.css">
+    <link rel="stylesheet" href="assets/css/records.css">
+    <link rel="stylesheet" href="assets/css/model.css">
+    <script src="assets/js/main.js" defer></script>
+    <title>Institut_Polytechnique de Faya Largeau</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="header-title">Institut_Polytechnique de Faya Largeau</h1>
+
+    </header>
+    <main>
+        <button class="button blue mobile" id="idStudent">Nouveau Etudiant</button>
+        <table id="tblStudent" class="records">
+            <thead>
+                <tr>
+                    <td>Nom</td>
+                    <td>Prenom</td>
+                    <td>Matricule</td>
+                    <td>Email</td>
+                    <td>Phone</td>
+                    <td>Frais</td>
+                    <td>Niveau</td>
+                    <td>Departement</td>
+                    <td>Actions</td>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <!-- <div class="model active" id="model"> -->
+        <div class="model" id="model">
+            <div class="model-content">
+                <header class="model-header">
+                    <h2>Ajouter un Nouveau Etudiant</h2>
+                    <span class="model-close" id="modelClose">&#10006;</span>
+                </header>
+                <form id="form" class="model-form">
+                    <input type="text" class="model-field" id="nom" data-index="new" placeholder="Nom de l'etudiant" required>
+                    <input type="text" class="model-field" id="prenom" data-index="new" placeholder="Prenom de l'etudiant" required>
+                    <input type="number" class="model-field" id="matricule" data-index="new" placeholder="Matricule de l'etudiant" required>
+                    <input type="email" class="model-field" id="email" placeholder="Email de l'etudiant" required>
+                    <input type="text" class="model-field" id="phone" placeholder="Phone de l'etudiant" required>
+                    <input type="text" class="model-field" id="frais" placeholder="Registration de Frais" required>
+                    <input type="text" class="model-field" id="niveau" placeholder="Niveau de l'etudiant" required>
+                    <input type="text" class="model-field" id="departement" placeholder="Departement de l'etudiant" required>
+                </form>
+                <footer class="model-footer">
+                    <button class="button green" id="save">Enregistrer</button>
+                    <button class="button blue" id="cancel">Annuler</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Copyright &copy; 2022_institut_polytech <br> Campus Martyr<br> 2897767<br> Phone: +235-66-XX-XX-XX<br> Institut_Polytechnique@gmail.com
+        <br>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/rv.css">
+    <title>Prise de Rendez-vous</title>
+</head>
+
+<body>
+    <h1>Prise de Rendez-vous</h1>
+    <form action="">
+        <fieldset>
+            <legend>Etudiant</legend>
+            <p>
+                <input type="text" class="nom" name="nom" placeholder="Votre Nom" autofocus>
+            </p>
+            <p>
+                <input type="text" class="prenom" name="prenom" placeholder="Votre Prenom">
+            </p>
+            <p>
+                <input type="tel" class="tel" name="tel" placeholder="Tel">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>RDV</legend>
+            <p>
+                <input type="date" class="date" name="date">
+            </p>
+            <p>
+                <label for="heure">Heure</label><br>
+                <select name="heure" id="heure">
+                    <option value="9h00">9h00</option>
+                    <option value="10h00">10h00</option>
+                    <option value="11h00">11h00</option>
+                    <option value="12h00">12h00</option>
+                    <option value="13h00">13h00</option>
+                    <option value="14h00">14h00</option>
+                    <option value="15h00">15h00</option>
+                </select>
+            </p>
+            <p>
+                <label for="service">service</label><br>
+                <input type="radio" name="service" id="service" value="Scolarite">Scolarite
+                <input type="radio" name="service" id="service" value="Rectorat">Rectorat
+                <input type="radio" name="service" id="service" value="Campus">Campus
+            </p>
+
+        </fieldset>
+        <p>
+            <input type="submit" value="Valider">
+        </p>
+    </form>
+
+</body>
+
+</html>
